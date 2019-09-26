@@ -1,13 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hola mundo...</title>
-</head>
-<body>
-    <h1>Hola mundo</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, molestiae quaerat fuga asperiores vero omnis facilis atque ipsa labore perspiciatis dolor nesciunt ad minus quam aperiam error esse dignissimos at.</p>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Test</title>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap" style="background-color: yellow;">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+          <form class="bd-search d-flex align-items-center">
+            <input type="search" class="form-control ds-input" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off" data-docs-version="4.3" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto">
+            <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"></button>
+          </form>
+        </div>
+        <div class="d-none d-xl-block col-xl-2 bd-toc">
+          <ul class="section-nav">
+            <li class="toc-entry toc-h2"><a href="#quick-start">Quick start</a>
+              <ul>
+                <li class="toc-entry toc-h3"><a href="#css">CSS</a></li>
+                <li class="toc-entry toc-h3"><a href="#js">JS</a></li>
+              </ul>
+            </li>
+            <li class="toc-entry toc-h2"><a href="#starter-template">Starter template</a></li>
+            <li class="toc-entry toc-h2"><a href="#important-globals">Important globals</a>
+              <ul>
+                <li class="toc-entry toc-h3"><a href="#html5-doctype">HTML5 doctype</a></li>
+                <li class="toc-entry toc-h3"><a href="#responsive-meta-tag">Responsive meta tag</a></li>
+                <li class="toc-entry toc-h3"><a href="#box-sizing">Box-sizing</a></li>
+                <li class="toc-entry toc-h3"><a href="#reboot">Reboot</a></li>
+              </ul>
+            </li>
+            <li class="toc-entry toc-h2"><a href="#community">Community</a></li>
+          </ul>
+        </div>
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          <h1 class="bd-title" id="content">Introduction</h1>
+          <p class="bd-lead">Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.</p>
+          <h2 id="quick-start"><span class="bd-content-title">Quick start<a class="anchorjs-link " href="#quick-start" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></span></h2>
+          <p>Looking to quickly add Bootstrap to your project? Use BootstrapCDN, provided for free by the folks at StackPath. Using a package manager or need to download the source files? <a href="/docs/4.3/getting-started/download/">Head to the downloads page</a>.</p>
+
+          <h3 id="css"><span class="bd-content-title">CSS<a class="anchorjs-link " href="#css" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></span></h3>
+          <p>Copy-paste the stylesheet <code class="highlighter-rouge">&lt;link&gt;</code> into your <code class="highlighter-rouge">&lt;head&gt;</code> before all other stylesheets to load our CSS.</p>
+
+          <h3 id="js"><span class="bd-content-title">JS<a class="anchorjs-link " href="#js" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></span></h3>
+          <p>Many of our components require the use of JavaScript to function. Specifically, they require <a href="https://jquery.com/">jQuery</a>, <a href="https://popper.js.org/">Popper.js</a>, and our own JavaScript plugins. Place the following <code class="highlighter-rouge">&lt;script&gt;</code>s near the end of your pages, right before the closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins.</p>
+          <p>We use <a href="https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/">jQuery’s slim build</a>, but the full version is also supported.</p>
+
+          <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://code.jquery.com/jquery-3.3.1.slim.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+          <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+          <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+
+          <p>Curious which components explicitly require jQuery, our JS, and Popper.js? Click the show components link below. If you’re at all unsure about the general page structure, keep reading for an example page template.</p>
+
+          <p>Our <code class="highlighter-rouge">bootstrap.bundle.js</code> and <code class="highlighter-rouge">bootstrap.bundle.min.js</code> include <a href="https://popper.js.org/">Popper</a>, but not <a href="https://jquery.com/">jQuery</a>. For more information about what’s included in Bootstrap, please see our <a href="/docs/4.3/getting-started/contents/#precompiled-bootstrap">contents</a> section.</p>
+
+          <details>
+            <summary class="text-primary mb-3">Show components requiring JavaScript</summary>
+            <ul>
+              <li>Alerts for dismissing</li>
+              <li>Buttons for toggling states and checkbox/radio functionality</li>
+              <li>Carousel for all slide behaviors, controls, and indicators</li>
+              <li>Collapse for toggling visibility of content</li>
+              <li>Dropdowns for displaying and positioning (also requires <a href="https://popper.js.org/">Popper.js</a>)</li>
+              <li>Modals for displaying, positioning, and scroll behavior</li>
+              <li>Navbar for extending our Collapse plugin to implement responsive behavior</li>
+              <li>Tooltips and popovers for displaying and positioning (also requires <a href="https://popper.js.org/">Popper.js</a>)</li>
+              <li>Scrollspy for scroll behavior and navigation updates</li>
+            </ul>
+          </details>
+
+          <h2 id="community"><span class="bd-content-title">Community<a class="anchorjs-link " href="#community" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></span></h2>
+          <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
+          <ul>
+            <li>Follow <a href="https://twitter.com/getbootstrap">@getbootstrap on Twitter</a>.</li>
+            <li>Read and subscribe to <a href="https://blog.getbootstrap.com/">The Official Bootstrap Blog</a>.</li>
+            <li>Join <a href="https://bootstrap-slack.herokuapp.com/">the official Slack room</a>.</li>
+            <li>Chat with fellow Bootstrappers in IRC. On the <code class="highlighter-rouge">irc.freenode.net</code> server, in the <code class="highlighter-rouge">##bootstrap</code> channel.</li>
+            <li>Implementation help may be found at Stack Overflow (tagged <a href="https://stackoverflow.com/questions/tagged/bootstrap-4"><code class="highlighter-rouge">bootstrap-4</code></a>).</li>
+            <li>Developers should use the keyword <code class="highlighter-rouge">bootstrap</code> on packages which modify or add to the functionality of Bootstrap when distributing through <a href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a> or similar delivery mechanisms for maximum discoverability.</li>
+          </ul>
+
+          <p>You can also follow <a href="https://twitter.com/getbootstrap">@getbootstrap on Twitter</a> for the latest gossip and awesome music videos.</p>
+        </main>
+      </div>
+    </div>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>

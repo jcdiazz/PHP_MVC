@@ -1,0 +1,36 @@
+body {
+	background-color: gray;
+}
+
+.color00 {
+	background-color: white;
+}
+
+.color01 {
+	background-color: yellow;
+}
+
+.color02 {
+	background-color: orange;
+}
+
+.color03 {
+	background-color: red;
+}
+
+.color04 {
+	background-color: blue;
+}
+
+.color05 {
+	background-color: green;
+}
+
+.color06 {
+	background-color: black;
+	color: white;
+}
+
+.altura {
+	height: 100px;
+}
